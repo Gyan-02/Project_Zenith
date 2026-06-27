@@ -29,6 +29,7 @@ export function CesiumScene({ skyState, isLoading, error, layers, selectedObject
   const viewerRef = useRef<CesiumViewer | undefined>(undefined);
   const rendererRef = useRef<SkyStateRenderer | undefined>(undefined);
   const previousSelectedIdRef = useRef<string | undefined>(undefined);
+  const hasFramedSkyRef = useRef(false);
   const [isLibraryReady, setIsLibraryReady] = useState(false);
   const navigationTarget = useNavigationTarget();
 
@@ -72,10 +73,24 @@ export function CesiumScene({ skyState, isLoading, error, layers, selectedObject
       homeButton: false,
       sceneModePicker: false,
       navigationHelpButton: false,
-      selectionIndicator: true,
+      selectionIndicator: false,
       infoBox: false,
     });
-    viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString("#071022");
+
+    // Presentation mode: Zenith is a sky digital twin, not an Earth viewer.
+    // On deployed Cesium builds the default globe/atmosphere can dominate the
+    // screen as a giant dark/red sphere. Hide the physical globe surface and
+    // keep our computed sky objects, paths, and labels as the visual focus.
+    viewer.scene.backgroundColor = Cesium.Color.fromCssColorString("#02040b");
+    if (viewer.scene.globe) {
+      viewer.scene.globe.show = false;
+      viewer.scene.globe.baseColor = Cesium.Color.fromCssColorString("#02040b");
+    }
+    if (viewer.scene.skyAtmosphere) viewer.scene.skyAtmosphere.show = false;
+    if (viewer.scene.fog) viewer.scene.fog.enabled = false;
+    if (viewer.scene.sun) viewer.scene.sun.show = false;
+    if (viewer.scene.moon) viewer.scene.moon.show = false;
+
     viewerRef.current = viewer;
     const renderer = new SkyStateRenderer(viewer, Cesium);
     rendererRef.current = renderer;
@@ -91,7 +106,13 @@ export function CesiumScene({ skyState, isLoading, error, layers, selectedObject
   }, [isLibraryReady, onSelectObject]);
 
   useEffect(() => {
-    if (skyState && rendererRef.current) rendererRef.current.updateSkyState(skyState);
+    if (skyState && rendererRef.current) {
+      rendererRef.current.updateSkyState(skyState);
+      if (!hasFramedSkyRef.current && viewerRef.current) {
+        hasFramedSkyRef.current = true;
+        void viewerRef.current.zoomTo(viewerRef.current.entities);
+      }
+    }
   }, [skyState, isLibraryReady]);
 
   useEffect(() => {
