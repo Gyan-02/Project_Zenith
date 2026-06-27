@@ -64,7 +64,7 @@ export async function apiGetJson<T>(
   if (!response.ok) {
     throw new ApiError(
       response.status,
-      `API request failed: ${response.status} ${response.statusText} — ${url}`,
+      `API request failed: ${response.status} ${response.statusText}`,
     );
   }
 

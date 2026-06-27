@@ -3,6 +3,8 @@
  */
 
 import { apiGetJson } from "./api";
+import { getDemoPassesFallback } from "./demoFallback";
+import { isDemoActive } from "./demoMode";
 
 // ---------------------------------------------------------------------------
 // Types (mirrors backend PassPrediction / passes router response)
@@ -50,16 +52,21 @@ export async function getPassPredictions(
   params: PassesParams,
   signal?: AbortSignal,
 ): Promise<PassesResponse> {
-  return apiGetJson<PassesResponse>(
-    "/api/passes",
-    {
-      lat: params.lat,
-      lon: params.lon,
-      ...(params.elevationM !== undefined ? { elevationM: params.elevationM } : {}),
-      start: params.startUtc,
-      end: params.endUtc,
-      ...(params.minElevationDeg !== undefined ? { minElevationDeg: params.minElevationDeg } : {}),
-    },
-    signal,
-  );
+  try {
+    return await apiGetJson<PassesResponse>(
+      "/api/passes",
+      {
+        lat: params.lat,
+        lon: params.lon,
+        ...(params.elevationM !== undefined ? { elevationM: params.elevationM } : {}),
+        start: params.startUtc,
+        end: params.endUtc,
+        ...(params.minElevationDeg !== undefined ? { minElevationDeg: params.minElevationDeg } : {}),
+      },
+      signal,
+    );
+  } catch (error) {
+    if (isDemoActive()) return getDemoPassesFallback(params);
+    throw error;
+  }
 }

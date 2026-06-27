@@ -42,27 +42,28 @@ export interface PassesDependencies {
 
 const ACTIVE_TLE_ENDPOINT = "https://celestrak.org/NORAD/elements/gp.php?GROUP=active&FORMAT=TLE";
 const STATIONS_TLE_ENDPOINT = "https://celestrak.org/NORAD/elements/gp.php?GROUP=stations&FORMAT=TLE";
+const PASS_TLE_TIMEOUT_MS = Number(process.env.CELESTRAK_TIMEOUT_MS ?? 20_000);
 
-const activeCatalogProvider = new CelestrakProvider({ endpoint: ACTIVE_TLE_ENDPOINT });
-const stationsCatalogProvider = new CelestrakProvider({ endpoint: STATIONS_TLE_ENDPOINT });
+const activeCatalogProvider = new CelestrakProvider({ endpoint: ACTIVE_TLE_ENDPOINT, timeoutMs: PASS_TLE_TIMEOUT_MS });
+const stationsCatalogProvider = new CelestrakProvider({ endpoint: STATIONS_TLE_ENDPOINT, timeoutMs: PASS_TLE_TIMEOUT_MS });
 
 async function getLivePassCatalog(): Promise<{ records: TleRecord[]; source: string; fetchedAt: string; stale: boolean }> {
   try {
-    const catalog = await activeCatalogProvider.getCatalog();
+    const catalog = await stationsCatalogProvider.getCatalog();
     return {
       records: catalog.records,
-      source: catalog.stale ? "CelesTrak active TLE stale cache" : "CelesTrak active TLE catalog",
+      source: catalog.stale ? "CelesTrak stations TLE stale cache" : "CelesTrak stations TLE catalog",
       fetchedAt: catalog.fetchedAt,
       stale: catalog.stale,
     };
   } catch (error) {
     if (!(error instanceof CelestrakUpstreamError)) throw error;
-    const fallbackCatalog = await stationsCatalogProvider.getCatalog();
+    const fallbackCatalog = await activeCatalogProvider.getCatalog();
     return {
       records: fallbackCatalog.records,
       source: fallbackCatalog.stale
-        ? "CelesTrak stations TLE stale cache"
-        : "CelesTrak stations TLE catalog fallback",
+        ? "CelesTrak active TLE stale cache"
+        : "CelesTrak active TLE catalog fallback",
       fetchedAt: fallbackCatalog.fetchedAt,
       stale: fallbackCatalog.stale,
     };
@@ -147,7 +148,7 @@ export function createPassesRouter(deps?: PassesDependencies): Router {
       });
     } catch (err) {
       res.status(503).json({
-        error: "Pass prediction temporarily unavailable",
+        error: "Live pass prediction temporarily unavailable",
         detail: err instanceof Error ? err.message : "Unknown error",
       });
     }

@@ -61,7 +61,14 @@ export function usePassPredictions(
       })
       .catch((err: unknown) => {
         if (controller.signal.aborted) return;
-        setError(err instanceof Error ? err.message : "Failed to load pass predictions");
+        setPasses([]);
+        setProvenance([]);
+        setDemo(undefined);
+        setError(
+          err instanceof Error && err.message
+            ? "This panel uses real CelesTrak TLE data. The live provider did not respond, so please try again in a moment."
+            : "The live provider did not respond, so please try again in a moment.",
+        );
       })
       .finally(() => {
         if (!controller.signal.aborted) setIsLoading(false);
