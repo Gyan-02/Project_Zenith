@@ -517,7 +517,7 @@ button { color: inherit; }
 
 .scene-error {
   position: absolute;
-  z-index: 2;
+  z-index: 3500;
   left: 50%;
   bottom: 24px;
   padding: 9px 13px;
