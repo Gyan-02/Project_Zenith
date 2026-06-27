@@ -31,9 +31,9 @@ button { color: inherit; }
   background: radial-gradient(circle at 30% 20%, #17214a, #03050d 58%);
   --z-globe: 0;
   --z-overlay: 5;
-  --z-shell: 20;
-  --z-panel: 30;
-  --z-modal: 40;
+  --z-shell: 2000;
+  --z-panel: 3000;
+  --z-modal: 4000;
 }
 
 .zenith-shell::after {
@@ -63,7 +63,7 @@ button { color: inherit; }
 }
 
 .top-command-bar {
-  position: absolute;
+  position: fixed;
   z-index: var(--z-shell);
   top: 18px;
   left: 24px;
@@ -164,7 +164,7 @@ button { color: inherit; }
 }
 
 .left-tool-rail {
-  position: absolute;
+  position: fixed;
   z-index: var(--z-shell);
   top: 108px;
   left: 24px;
@@ -222,7 +222,7 @@ button { color: inherit; }
 }
 
 .workspace-panel {
-  position: absolute;
+  position: fixed;
   z-index: var(--z-panel);
   top: 108px;
   left: 112px;
@@ -344,7 +344,7 @@ button { color: inherit; }
 }
 
 .right-dock {
-  position: absolute;
+  position: fixed;
   z-index: var(--z-shell);
   right: 24px;
 }
@@ -413,7 +413,7 @@ button { color: inherit; }
 }
 
 .bottom-tray {
-  position: absolute;
+  position: fixed;
   z-index: var(--z-shell);
   left: 50%;
   bottom: 24px;
@@ -1132,7 +1132,7 @@ button { color: inherit; }
   }
 
   .mobile-tab-bar {
-    position: absolute;
+    position: fixed;
     z-index: var(--z-shell);
     right: 10px;
     bottom: 10px;
