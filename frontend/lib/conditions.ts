@@ -6,6 +6,8 @@
  */
 
 import { apiGetJson } from "./api";
+import { getDemoConditionsFallback } from "./demoFallback";
+import { isDemoActive } from "./demoMode";
 
 // ---------------------------------------------------------------------------
 // Types
@@ -50,13 +52,18 @@ export async function getObservingConditions(
   params: ConditionsParams,
   signal?: AbortSignal,
 ): Promise<ObservingConditionsResponse> {
-  return apiGetJson<ObservingConditionsResponse>(
-    "/api/conditions",
-    {
-      lat: params.lat,
-      lon: params.lon,
-      ...(params.timeUtc ? { time: params.timeUtc } : {}),
-    },
-    signal,
-  );
+  try {
+    return await apiGetJson<ObservingConditionsResponse>(
+      "/api/conditions",
+      {
+        lat: params.lat,
+        lon: params.lon,
+        ...(params.timeUtc ? { time: params.timeUtc } : {}),
+      },
+      signal,
+    );
+  } catch (error) {
+    if (isDemoActive()) return getDemoConditionsFallback(params, params.timeUtc);
+    throw error;
+  }
 }

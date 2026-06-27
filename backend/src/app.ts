@@ -10,10 +10,28 @@ import { createNarrateRouter, type NarrationDependencies } from "./routes/narrat
 import { createPassesRouter } from "./routes/passes.js";
 import { createSkyStateRouter } from "./routes/skyState.js";
 
+function isAllowedOrigin(origin: string | undefined): boolean {
+  if (!origin) return true;
+
+  try {
+    const parsed = new URL(origin);
+    if (parsed.hostname === "localhost" || parsed.hostname === "127.0.0.1") return true;
+    if (parsed.protocol === "https:" && parsed.hostname.endsWith(".vercel.app")) return true;
+
+    return config.frontendOrigins.includes(parsed.origin);
+  } catch {
+    return config.frontendOrigins.includes(origin.replace(/\/+$/, ""));
+  }
+}
+
 export function createApp(narrationDependencies?: NarrationDependencies): Express {
   const app = express();
   app.disable("x-powered-by");
-  app.use(cors({ origin: config.frontendOrigin }));
+  app.use(cors({
+    origin(origin, callback) {
+      callback(null, isAllowedOrigin(origin));
+    },
+  }));
   app.use(express.json({ limit: "64kb" }));
 
   app.get("/", (_request, response) => {

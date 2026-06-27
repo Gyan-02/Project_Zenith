@@ -2,7 +2,8 @@
 
 import { useCallback, useEffect, useState } from "react";
 import { getApiBaseUrl } from "../lib/api/baseUrl";
-import { resolvePath } from "../lib/demoMode";
+import { getDemoSkyStateFallback } from "../lib/demoFallback";
+import { isDemoActive, resolvePath } from "../lib/demoMode";
 import { SkyStateSchema, type SkyState } from "../lib/skyState";
 
 export interface SkyStateLocation {
@@ -36,6 +37,11 @@ export function useSkyState(location: SkyStateLocation, timeIso: string, refresh
       setError(null);
     } catch (caught) {
       if (caught instanceof DOMException && caught.name === "AbortError") return;
+      if (isDemoActive()) {
+        setState(getDemoSkyStateFallback(location, timeIso));
+        setError(null);
+        return;
+      }
       setError(caught instanceof Error ? caught.message : "Sky-state is unavailable");
     } finally {
       if (!signal?.aborted) setIsLoading(false);
