@@ -1,0 +1,165 @@
+/**
+ * GYA-40 — ObjectSearchPanel styles
+ *
+ * Uses existing CSS custom properties: --ink, --muted, --cyan, --panel, --line
+ */
+
+/* --------------------------------------------------------------------------
+   Container / positioning — caller controls position/z-index
+   -------------------------------------------------------------------------- */
+
+.zp-search-panel {
+  position: relative;
+  width: 100%;
+}
+
+/* --------------------------------------------------------------------------
+   Input wrapper
+   -------------------------------------------------------------------------- */
+
+.zp-search-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(2, 4, 11, 0.72);
+  transition: border-color 0.15s;
+}
+
+.zp-search-input-wrap:focus-within {
+  border-color: rgba(100, 233, 255, 0.5);
+}
+
+.zp-search-icon {
+  flex-shrink: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+}
+
+.zp-search-input {
+  flex: 1 1 0;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+}
+
+.zp-search-input::placeholder {
+  color: #6e7890;
+}
+
+.zp-search-clear {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  transition: color 0.15s, background 0.15s;
+}
+
+.zp-search-clear:hover {
+  background: rgba(255, 255, 255, 0.18);
+  color: var(--ink);
+}
+
+/* --------------------------------------------------------------------------
+   Results listbox
+   -------------------------------------------------------------------------- */
+
+.zp-search-results {
+  position: absolute;
+  z-index: 10;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(8, 12, 27, 0.94);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.36);
+  overflow: hidden;
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* --------------------------------------------------------------------------
+   Result rows
+   -------------------------------------------------------------------------- */
+
+.zp-search-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 14px;
+  cursor: pointer;
+  transition: background 0.12s;
+  border: none;
+  width: 100%;
+  text-align: left;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-size: 13px;
+}
+
+.zp-search-option:hover,
+.zp-search-option[aria-selected="true"] {
+  background: rgba(100, 233, 255, 0.08);
+}
+
+.zp-search-option[aria-selected="true"] .zp-search-option-name {
+  color: var(--cyan);
+}
+
+.zp-search-option-name {
+  flex: 1 1 0;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+/* Kind badge */
+.zp-search-kind-badge {
+  flex-shrink: 0;
+  padding: 2px 7px;
+  border-radius: 99px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.zp-search-kind--planet      { background: rgba(241, 210, 170, 0.18); color: #f1d2aa; }
+.zp-search-kind--satellite   { background: rgba(100, 233, 255, 0.15); color: #64e9ff; }
+.zp-search-kind--iss         { background: rgba(255, 255, 255, 0.12); color: #fff; }
+.zp-search-kind--moon        { background: rgba(223, 232, 255, 0.15); color: #dfe8ff; }
+.zp-search-kind--star        { background: rgba(255, 246, 216, 0.15); color: #fff6d8; }
+.zp-search-kind--constellation { background: rgba(158, 123, 255, 0.18); color: #9e7bff; }
+.zp-search-kind--meteor_shower { background: rgba(255, 158, 102, 0.18); color: #ff9e66; }
+
+/* Empty state */
+.zp-search-empty {
+  padding: 14px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}

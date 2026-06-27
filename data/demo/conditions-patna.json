@@ -1,0 +1,15 @@
+{
+  "location": { "lat": 25.61, "lon": 85.14 },
+  "observedAt": "2026-08-12T20:30:00.000Z",
+  "quality": "Excellent",
+  "summary": "Excellent viewing: clear skies with minimal cloud cover and low humidity.",
+  "cloudCoverPct": 8,
+  "visibilityMeters": 10000,
+  "humidityPct": 62,
+  "temperatureC": 28.4,
+  "windSpeedMps": 3.2,
+  "cached": false,
+  "unavailable": false,
+  "source": "OpenWeatherMap",
+  "demo": true
+}

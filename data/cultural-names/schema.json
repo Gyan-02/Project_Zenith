@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://project-zenith.dev/schemas/cultural-names.schema.json",
+  "title": "Project Zenith Cultural Names Dataset",
+  "type": "object",
+  "propertyNames": { "pattern": "^[a-z0-9_]+$" },
+  "additionalProperties": {
+    "type": "object",
+    "required": ["scientific", "category", "names"],
+    "properties": {
+      "scientific": { "type": "string", "minLength": 1 },
+      "category": {
+        "enum": ["planet", "moon", "star", "constellation", "asterism"]
+      },
+      "names": {
+        "type": "object",
+        "minProperties": 1,
+        "additionalProperties": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "transliteration": { "type": "string", "minLength": 1 },
+            "meaning": { "type": "string", "minLength": 1 }
+          },
+          "additionalProperties": false
+        }
+      }
+    },
+    "additionalProperties": false
+  }
+}

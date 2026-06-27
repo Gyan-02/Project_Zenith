@@ -1,0 +1,182 @@
+{
+  "mercury": {
+    "scientific": "Mercury",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "बुध", "transliteration": "Budha", "meaning": "Associated with intelligence and communication" },
+      "chinese": { "name": "水星", "transliteration": "Shuǐxīng", "meaning": "Water Star" },
+      "greek": { "name": "Ἑρμῆς", "transliteration": "Hermes", "meaning": "Messenger of the gods" },
+      "arabic": { "name": "عطارد", "transliteration": "ʿUṭārid" }
+    }
+  },
+  "venus": {
+    "scientific": "Venus",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "शुक्र", "transliteration": "Shukra", "meaning": "The bright one" },
+      "chinese": { "name": "金星", "transliteration": "Jīnxīng", "meaning": "Metal Star" },
+      "greek": { "name": "Ἀφροδίτη", "transliteration": "Aphrodite" },
+      "arabic": { "name": "الزهرة", "transliteration": "az-Zuhara", "meaning": "The radiant one" }
+    }
+  },
+  "earth": {
+    "scientific": "Earth",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "पृथ्वी", "transliteration": "Prithvi", "meaning": "The broad earth" },
+      "chinese": { "name": "地球", "transliteration": "Dìqiú", "meaning": "Earth sphere" },
+      "greek": { "name": "Γαῖα", "transliteration": "Gaia", "meaning": "Earth" },
+      "arabic": { "name": "الأرض", "transliteration": "al-Arḍ", "meaning": "The Earth" }
+    }
+  },
+  "mars": {
+    "scientific": "Mars",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "मंगल", "transliteration": "Mangala", "meaning": "The auspicious one" },
+      "chinese": { "name": "火星", "transliteration": "Huǒxīng", "meaning": "Fire Star" },
+      "greek": { "name": "Ἄρης", "transliteration": "Ares" },
+      "arabic": { "name": "المريخ", "transliteration": "al-Mirrīkh" }
+    }
+  },
+  "jupiter": {
+    "scientific": "Jupiter",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "Brihaspati", "transliteration": "Bṛhaspati", "meaning": "Teacher of the gods" },
+      "chinese": { "name": "木星", "transliteration": "Mùxīng", "meaning": "Wood Star" },
+      "greek": { "name": "Ζεύς", "transliteration": "Zeus" },
+      "arabic": { "name": "المشتري", "transliteration": "al-Mushtarī" }
+    }
+  },
+  "saturn": {
+    "scientific": "Saturn",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "शनि", "transliteration": "Shani", "meaning": "The slow-moving one" },
+      "chinese": { "name": "土星", "transliteration": "Tǔxīng", "meaning": "Earth Star" },
+      "greek": { "name": "Κρόνος", "transliteration": "Cronus" },
+      "arabic": { "name": "زحل", "transliteration": "Zuḥal" }
+    }
+  },
+  "uranus": {
+    "scientific": "Uranus",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "अरुण", "transliteration": "Aruna", "meaning": "Modern Indian usage" },
+      "chinese": { "name": "天王星", "transliteration": "Tiānwángxīng", "meaning": "Heavenly King Star" },
+      "greek": { "name": "Οὐρανός", "transliteration": "Ouranos", "meaning": "Sky" },
+      "arabic": { "name": "أورانوس", "transliteration": "Ūrānūs" }
+    }
+  },
+  "neptune": {
+    "scientific": "Neptune",
+    "category": "planet",
+    "names": {
+      "vedic": { "name": "वरुण", "transliteration": "Varuna", "meaning": "Modern Indian usage; associated with cosmic waters" },
+      "chinese": { "name": "海王星", "transliteration": "Hǎiwángxīng", "meaning": "Sea King Star" },
+      "greek": { "name": "Ποσειδῶν", "transliteration": "Poseidon" },
+      "arabic": { "name": "نبتون", "transliteration": "Nibtūn" }
+    }
+  },
+  "moon": {
+    "scientific": "Moon",
+    "category": "moon",
+    "names": {
+      "vedic": { "name": "चन्द्र", "transliteration": "Chandra", "meaning": "The shining one" },
+      "chinese": { "name": "月亮", "transliteration": "Yuèliang", "meaning": "Moon" },
+      "greek": { "name": "Σελήνη", "transliteration": "Selene" },
+      "arabic": { "name": "القمر", "transliteration": "al-Qamar", "meaning": "The Moon" }
+    }
+  },
+  "sun": {
+    "scientific": "Sun",
+    "category": "star",
+    "names": {
+      "vedic": { "name": "सूर्य", "transliteration": "Surya", "meaning": "The Sun" },
+      "chinese": { "name": "太阳", "transliteration": "Tàiyáng", "meaning": "Supreme Yang" },
+      "greek": { "name": "Ἥλιος", "transliteration": "Helios" },
+      "arabic": { "name": "الشمس", "transliteration": "ash-Shams", "meaning": "The Sun" }
+    }
+  },
+  "orion": {
+    "scientific": "Orion",
+    "category": "constellation",
+    "names": {
+      "vedic": { "name": "Mrigashira", "transliteration": "Mṛgaśīrṣa", "meaning": "The deer's head; an Orion-region lunar mansion" },
+      "chinese": { "name": "参宿", "transliteration": "Shēn Xiù", "meaning": "The Three Stars mansion" },
+      "greek": { "name": "Ὠρίων", "transliteration": "Orion", "meaning": "The hunter" },
+      "arabic": { "name": "الجبار", "transliteration": "al-Jabbār", "meaning": "The giant" }
+    }
+  },
+  "ursa_major": {
+    "scientific": "Ursa Major",
+    "category": "constellation",
+    "names": {
+      "vedic": { "name": "सप्तर्षि", "transliteration": "Saptarishi", "meaning": "The seven sages" },
+      "chinese": { "name": "北斗", "transliteration": "Běidǒu", "meaning": "Northern Dipper" },
+      "greek": { "name": "Ἄρκτος Μεγάλη", "transliteration": "Arktos Megalē", "meaning": "Great Bear" },
+      "arabic": { "name": "الدب الأكبر", "transliteration": "ad-Dubb al-Akbar", "meaning": "The Great Bear" }
+    }
+  },
+  "cassiopeia": {
+    "scientific": "Cassiopeia",
+    "category": "constellation",
+    "names": {
+      "vedic": { "name": "शर्मिष्ठा", "transliteration": "Sharmishtha", "meaning": "Modern Indian cultural mapping" },
+      "chinese": { "name": "王良", "transliteration": "Wáng Liáng", "meaning": "The royal charioteer asterism" },
+      "greek": { "name": "Κασσιόπεια", "transliteration": "Kassiopeia" },
+      "arabic": { "name": "ذات الكرسي", "transliteration": "Dhāt al-Kursī", "meaning": "The lady of the chair" }
+    }
+  },
+  "pleiades": {
+    "scientific": "Pleiades",
+    "category": "asterism",
+    "names": {
+      "vedic": { "name": "कृत्तिका", "transliteration": "Krittika", "meaning": "The cutters; a lunar mansion" },
+      "chinese": { "name": "昴宿", "transliteration": "Mǎo Xiù", "meaning": "Hairy Head mansion" },
+      "greek": { "name": "Πλειάδες", "transliteration": "Pleiades", "meaning": "The Seven Sisters" },
+      "arabic": { "name": "الثريا", "transliteration": "ath-Thurayyā", "meaning": "The little abundant one" }
+    }
+  },
+  "sirius": {
+    "scientific": "Sirius",
+    "category": "star",
+    "names": {
+      "vedic": { "name": "लुब्धक", "transliteration": "Lubdhaka", "meaning": "The hunter" },
+      "chinese": { "name": "天狼", "transliteration": "Tiānláng", "meaning": "Celestial Wolf" },
+      "greek": { "name": "Σείριος", "transliteration": "Seirios", "meaning": "Glowing or scorching" },
+      "arabic": { "name": "الشعرى", "transliteration": "ash-Shiʿrā" }
+    }
+  },
+  "betelgeuse": {
+    "scientific": "Betelgeuse",
+    "category": "star",
+    "names": {
+      "vedic": { "name": "आर्द्रा", "transliteration": "Ardra", "meaning": "The moist one; a lunar mansion" },
+      "chinese": { "name": "参宿四", "transliteration": "Shēnxiùsì", "meaning": "Fourth star of the Three Stars mansion" },
+      "greek": { "name": "Ὦμος Ὠρίωνος", "transliteration": "Ōmos Oriōnos", "meaning": "Shoulder of Orion" },
+      "arabic": { "name": "إبط الجوزاء", "transliteration": "Ibṭ al-Jawzāʾ", "meaning": "Armpit of Orion" }
+    }
+  },
+  "polaris": {
+    "scientific": "Polaris",
+    "category": "star",
+    "names": {
+      "vedic": { "name": "ध्रुव", "transliteration": "Dhruva", "meaning": "The fixed one" },
+      "chinese": { "name": "北极星", "transliteration": "Běijíxīng", "meaning": "North Pole Star" },
+      "greek": { "name": "Κυνόσουρα", "transliteration": "Kynosoura", "meaning": "Dog's tail" },
+      "arabic": { "name": "الجدي", "transliteration": "al-Judayy", "meaning": "The young goat" }
+    }
+  },
+  "vega": {
+    "scientific": "Vega",
+    "category": "star",
+    "names": {
+      "vedic": { "name": "अभिजित", "transliteration": "Abhijit", "meaning": "The victorious one" },
+      "chinese": { "name": "织女星", "transliteration": "Zhīnǚxīng", "meaning": "Weaving Girl Star" },
+      "greek": { "name": "Λύρα", "transliteration": "Lyra", "meaning": "The lyre's bright star" },
+      "arabic": { "name": "النسر الواقع", "transliteration": "an-Nasr al-Wāqiʿ", "meaning": "The swooping eagle" }
+    }
+  }
+}

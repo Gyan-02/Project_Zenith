@@ -1,0 +1,22 @@
+{
+  "vedic": {
+    "label": "Vedic / Indian",
+    "nativeLabel": "भारतीय",
+    "defaultForCountryCodes": ["IN"]
+  },
+  "chinese": {
+    "label": "Chinese",
+    "nativeLabel": "中国星官",
+    "defaultForCountryCodes": ["CN", "TW", "HK"]
+  },
+  "greek": {
+    "label": "Greek",
+    "nativeLabel": "Ελληνική",
+    "defaultForCountryCodes": ["GR", "CY"]
+  },
+  "arabic": {
+    "label": "Arabic",
+    "nativeLabel": "عربي",
+    "defaultForCountryCodes": ["AE", "SA", "EG", "JO", "MA"]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "project-zenith",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend -c cyan,magenta \"npm run dev -w backend\" \"npm run dev -w frontend\"",
+    "build": "npm run build -w backend && npm run build -w frontend",
+    "test": "npm run test -w backend && npm run test -w frontend",
+    "test:scripts": "vitest run --config scripts/vitest.config.ts",
+    "seed": "npm run seed -w backend",
+    "validate:cultural-names": "tsx scripts/validate-cultural-names.ts",
+    "doctor": "tsx scripts/doctor.ts",
+    "smoke": "tsx scripts/demo-smoke.ts"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "concurrently": "^9.1.2",
+    "tsx": "^4.20.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

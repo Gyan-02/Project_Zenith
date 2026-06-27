@@ -1,0 +1,1812 @@
+{
+  "location": {
+    "lat": 25.61,
+    "lon": 85.14,
+    "elevationM": 53,
+    "label": "Patna, India"
+  },
+  "timestampUtc": "2026-08-12T20:30:00.000Z",
+  "planets": [
+    {
+      "id": "saturn",
+      "kind": "planet",
+      "name": "Saturn",
+      "position": {
+        "ra": 317.4,
+        "dec": -12.8,
+        "altDeg": 32.5,
+        "azDeg": 138.2,
+        "distanceKm": 1340000000
+      },
+      "metadata": {
+        "visible": true,
+        "source": "demo fixture GYA-31",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.7
+      }
+    },
+    {
+      "id": "jupiter",
+      "kind": "planet",
+      "name": "Jupiter",
+      "position": {
+        "ra": 51.2,
+        "dec": 18.6,
+        "altDeg": 22.1,
+        "azDeg": 72.4,
+        "distanceKm": 793000000
+      },
+      "metadata": {
+        "visible": true,
+        "source": "demo fixture GYA-31",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -2.1
+      }
+    },
+    {
+      "id": "mars",
+      "kind": "planet",
+      "name": "Mars",
+      "position": {
+        "ra": 168.7,
+        "dec": 11.2,
+        "altDeg": 58.9,
+        "azDeg": 192.3,
+        "distanceKm": 215000000
+      },
+      "metadata": {
+        "visible": true,
+        "source": "demo fixture GYA-31",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.1
+      }
+    },
+    {
+      "id": "venus",
+      "kind": "planet",
+      "name": "Venus",
+      "position": {
+        "ra": 130.5,
+        "dec": 18.3,
+        "altDeg": 41.2,
+        "azDeg": 255.6,
+        "distanceKm": 155000000
+      },
+      "metadata": {
+        "visible": true,
+        "source": "demo fixture GYA-50",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -4.3
+      }
+    }
+  ],
+  "stars": [
+    {
+      "id": "sirius",
+      "kind": "star",
+      "name": "Sirius",
+      "position": {
+        "ra": 101.2872,
+        "dec": -16.7161,
+        "distanceKm": 81362282064195
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -1.46,
+        "spectralType": "A1V",
+        "constellation": "Canis Major",
+        "searchable": true
+      }
+    },
+    {
+      "id": "canopus",
+      "kind": "star",
+      "name": "Canopus",
+      "position": {
+        "ra": 95.9879,
+        "dec": -52.6957,
+        "distanceKm": 2932826446500048
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -0.74,
+        "spectralType": "A9II",
+        "constellation": "Carina",
+        "searchable": true
+      }
+    },
+    {
+      "id": "arcturus",
+      "kind": "star",
+      "name": "Arcturus",
+      "position": {
+        "ra": 213.9153,
+        "dec": 19.1824,
+        "distanceKm": 347208808343715
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -0.05,
+        "spectralType": "K1.5III",
+        "constellation": "Boötes",
+        "searchable": true
+      }
+    },
+    {
+      "id": "vega",
+      "kind": "star",
+      "name": "Vega",
+      "position": {
+        "ra": 279.2347,
+        "dec": 38.7837,
+        "distanceKm": 236518261814520
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.03,
+        "spectralType": "A0V",
+        "constellation": "Lyra",
+        "searchable": true
+      }
+    },
+    {
+      "id": "capella",
+      "kind": "star",
+      "name": "Capella",
+      "position": {
+        "ra": 79.1723,
+        "dec": 45.998,
+        "distanceKm": 405865337273716
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.08,
+        "spectralType": "G8III/G0III",
+        "constellation": "Auriga",
+        "searchable": true
+      }
+    },
+    {
+      "id": "rigel",
+      "kind": "star",
+      "name": "Rigel",
+      "position": {
+        "ra": 78.6345,
+        "dec": -8.2016,
+        "distanceKm": 8136228206419489
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.13,
+        "spectralType": "B8Ia",
+        "constellation": "Orion",
+        "searchable": true
+      }
+    },
+    {
+      "id": "procyon",
+      "kind": "star",
+      "name": "Procyon",
+      "position": {
+        "ra": 114.8255,
+        "dec": 5.225,
+        "distanceKm": 108419971215776
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.34,
+        "spectralType": "F5IV-V",
+        "constellation": "Canis Minor",
+        "searchable": true
+      }
+    },
+    {
+      "id": "betelgeuse",
+      "kind": "star",
+      "name": "Betelgeuse",
+      "position": {
+        "ra": 88.7929,
+        "dec": 7.4071,
+        "distanceKm": 5184480298974279
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.42,
+        "spectralType": "M1-2Ia-ab",
+        "constellation": "Orion",
+        "searchable": true
+      }
+    },
+    {
+      "id": "altair",
+      "kind": "star",
+      "name": "Altair",
+      "position": {
+        "ra": 297.6958,
+        "dec": 8.8683,
+        "distanceKm": 158278020806277
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.77,
+        "spectralType": "A7V",
+        "constellation": "Aquila",
+        "searchable": true
+      }
+    },
+    {
+      "id": "deneb",
+      "kind": "star",
+      "name": "Deneb",
+      "position": {
+        "ra": 310.358,
+        "dec": 45.2803,
+        "distanceKm": 24739810185798796
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.25,
+        "spectralType": "A2Ia",
+        "constellation": "Cygnus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "polaris",
+      "kind": "star",
+      "name": "Polaris",
+      "position": {
+        "ra": 37.9546,
+        "dec": 89.2641,
+        "distanceKm": 4228946521243618
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.98,
+        "spectralType": "F7Ib",
+        "constellation": "Ursa Minor",
+        "searchable": true
+      }
+    },
+    {
+      "id": "rigil-kentaurus",
+      "kind": "star",
+      "name": "Alpha Centauri",
+      "position": {
+        "ra": 219.9021,
+        "dec": -60.833,
+        "distanceKm": 41343392165178
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": -0.27,
+        "spectralType": "G2V",
+        "constellation": "Centaurus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "achernar",
+      "kind": "star",
+      "name": "Achernar",
+      "position": {
+        "ra": 24.4285,
+        "dec": -57.2368,
+        "distanceKm": 1315041535688731
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.45,
+        "spectralType": "B6Vep",
+        "constellation": "Eridanus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "hadar",
+      "kind": "star",
+      "name": "Hadar",
+      "position": {
+        "ra": 210.9558,
+        "dec": -60.3731,
+        "distanceKm": 3689684884306513
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.61,
+        "spectralType": "B1III",
+        "constellation": "Centaurus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "acrux",
+      "kind": "star",
+      "name": "Acrux",
+      "position": {
+        "ra": 191.9304,
+        "dec": -63.0991,
+        "distanceKm": 3027433751225856
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.77,
+        "spectralType": "B0.5IV",
+        "constellation": "Crux",
+        "searchable": true
+      }
+    },
+    {
+      "id": "aldebaran",
+      "kind": "star",
+      "name": "Aldebaran",
+      "position": {
+        "ra": 68.9802,
+        "dec": 16.5093,
+        "distanceKm": 614947480717752
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.85,
+        "spectralType": "K5III",
+        "constellation": "Taurus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "spica",
+      "kind": "star",
+      "name": "Spica",
+      "position": {
+        "ra": 201.2982,
+        "dec": -11.1613,
+        "distanceKm": 2365182618145200
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 0.98,
+        "spectralType": "B1III-IV",
+        "constellation": "Virgo",
+        "searchable": true
+      }
+    },
+    {
+      "id": "antares",
+      "kind": "star",
+      "name": "Antares",
+      "position": {
+        "ra": 247.3519,
+        "dec": -26.432,
+        "distanceKm": 5203401759919440
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.05,
+        "spectralType": "M1.5Iab-Ib",
+        "constellation": "Scorpius",
+        "searchable": true
+      }
+    },
+    {
+      "id": "pollux",
+      "kind": "star",
+      "name": "Pollux",
+      "position": {
+        "ra": 116.329,
+        "dec": 28.0262,
+        "distanceKm": 318826616925973
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.14,
+        "spectralType": "K0III",
+        "constellation": "Gemini",
+        "searchable": true
+      }
+    },
+    {
+      "id": "fomalhaut",
+      "kind": "star",
+      "name": "Fomalhaut",
+      "position": {
+        "ra": 344.4127,
+        "dec": -29.6222,
+        "distanceKm": 237464334861778
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.16,
+        "spectralType": "A3V",
+        "constellation": "Piscis Austrinus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "mimosa",
+      "kind": "star",
+      "name": "Mimosa",
+      "position": {
+        "ra": 191.9304,
+        "dec": -59.6888,
+        "distanceKm": 2649004532322624
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.25,
+        "spectralType": "B0.5IV",
+        "constellation": "Crux",
+        "searchable": true
+      }
+    },
+    {
+      "id": "regulus",
+      "kind": "star",
+      "name": "Regulus",
+      "position": {
+        "ra": 152.0929,
+        "dec": 11.9672,
+        "distanceKm": 750235926475658
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.35,
+        "spectralType": "B7V",
+        "constellation": "Leo",
+        "searchable": true
+      }
+    },
+    {
+      "id": "adhara",
+      "kind": "star",
+      "name": "Adhara",
+      "position": {
+        "ra": 104.6565,
+        "dec": -28.9721,
+        "distanceKm": 3831595841395225
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.5,
+        "spectralType": "B2II",
+        "constellation": "Canis Major",
+        "searchable": true
+      }
+    },
+    {
+      "id": "castor",
+      "kind": "star",
+      "name": "Castor",
+      "position": {
+        "ra": 113.6637,
+        "dec": 31.8883,
+        "distanceKm": 487227619337911
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.58,
+        "spectralType": "A1V",
+        "constellation": "Gemini",
+        "searchable": true
+      }
+    },
+    {
+      "id": "shaula",
+      "kind": "star",
+      "name": "Shaula",
+      "position": {
+        "ra": 262.245,
+        "dec": -37.1038,
+        "distanceKm": 6622511330806561
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.62,
+        "spectralType": "B2IV",
+        "constellation": "Scorpius",
+        "searchable": true
+      }
+    },
+    {
+      "id": "bellatrix",
+      "kind": "star",
+      "name": "Bellatrix",
+      "position": {
+        "ra": 81.2827,
+        "dec": 6.3497,
+        "distanceKm": 2365182618145200
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.64,
+        "spectralType": "B2III",
+        "constellation": "Orion",
+        "searchable": true
+      }
+    },
+    {
+      "id": "elnath",
+      "kind": "star",
+      "name": "Elnath",
+      "position": {
+        "ra": 81.5723,
+        "dec": 28.5985,
+        "distanceKm": 1267737883325827
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.65,
+        "spectralType": "B7III",
+        "constellation": "Taurus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "miaplacidus",
+      "kind": "star",
+      "name": "Miaplacidus",
+      "position": {
+        "ra": 138.3005,
+        "dec": -69.7245,
+        "distanceKm": 1069062543401631
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.67,
+        "spectralType": "A1III",
+        "constellation": "Carina",
+        "searchable": true
+      }
+    },
+    {
+      "id": "alnilam",
+      "kind": "star",
+      "name": "Alnilam",
+      "position": {
+        "ra": 84.0534,
+        "dec": -1.2019,
+        "distanceKm": 12677378833258274
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.69,
+        "spectralType": "B0Ia",
+        "constellation": "Orion",
+        "searchable": true
+      }
+    },
+    {
+      "id": "alnair",
+      "kind": "star",
+      "name": "Alnair",
+      "position": {
+        "ra": 332.0583,
+        "dec": -46.9609,
+        "distanceKm": 955533777730661
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.73,
+        "spectralType": "B6V",
+        "constellation": "Grus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "alnitak",
+      "kind": "star",
+      "name": "Alnitak",
+      "position": {
+        "ra": 85.1897,
+        "dec": -1.9426,
+        "distanceKm": 6622511330806561
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.74,
+        "spectralType": "O9.7Ib",
+        "constellation": "Orion",
+        "searchable": true
+      }
+    },
+    {
+      "id": "alioth",
+      "kind": "star",
+      "name": "Alioth",
+      "position": {
+        "ra": 193.5073,
+        "dec": 55.9598,
+        "distanceKm": 781456337035174
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.76,
+        "spectralType": "A1IIIp",
+        "constellation": "Ursa Major",
+        "searchable": true
+      }
+    },
+    {
+      "id": "mirfak",
+      "kind": "star",
+      "name": "Mirfak",
+      "position": {
+        "ra": 51.0808,
+        "dec": 49.8572,
+        "distanceKm": 4824972541016208
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.79,
+        "spectralType": "F5Ib",
+        "constellation": "Perseus",
+        "searchable": true
+      }
+    },
+    {
+      "id": "dubhe",
+      "kind": "star",
+      "name": "Dubhe",
+      "position": {
+        "ra": 165.9329,
+        "dec": 61.7511,
+        "distanceKm": 1163669848127439
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.81,
+        "spectralType": "K0III",
+        "constellation": "Ursa Major",
+        "searchable": true
+      }
+    },
+    {
+      "id": "wezen",
+      "kind": "star",
+      "name": "Wezen",
+      "position": {
+        "ra": 106.2644,
+        "dec": -26.3932,
+        "distanceKm": 17029314850645442
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.83,
+        "spectralType": "F8Ia",
+        "constellation": "Canis Major",
+        "searchable": true
+      }
+    },
+    {
+      "id": "kaus-australis",
+      "kind": "star",
+      "name": "Kaus Australis",
+      "position": {
+        "ra": 276.1249,
+        "dec": -34.3846,
+        "distanceKm": 1352884457579055
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 1.85,
+        "spectralType": "B9.5III",
+        "constellation": "Sagittarius",
+        "searchable": true
+      }
+    },
+    {
+      "id": "star-faint-1",
+      "kind": "star",
+      "name": "HD 10307",
+      "position": {
+        "ra": 25.1258,
+        "dec": 57.252,
+        "distanceKm": 389782095470329
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.96,
+        "spectralType": "G1.5V",
+        "constellation": "Andromeda",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-2",
+      "kind": "star",
+      "name": "HD 188753",
+      "position": {
+        "ra": 298.456,
+        "dec": 41.87,
+        "distanceKm": 1428570301359701
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.43,
+        "spectralType": "G8V",
+        "constellation": "Cygnus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-3",
+      "kind": "star",
+      "name": "HD 209458",
+      "position": {
+        "ra": 330.79,
+        "dec": 18.88,
+        "distanceKm": 1504256145140347
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.65,
+        "spectralType": "G0V",
+        "constellation": "Pegasus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-4",
+      "kind": "star",
+      "name": "Kepler-22",
+      "position": {
+        "ra": 290.3,
+        "dec": 47.88,
+        "distanceKm": 6007563850088808
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 11.66,
+        "spectralType": "G5V",
+        "constellation": "Cygnus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-5",
+      "kind": "star",
+      "name": "Megrez",
+      "position": {
+        "ra": 183.8568,
+        "dec": 57.0326,
+        "distanceKm": 766319168279045
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.32,
+        "spectralType": "A3V",
+        "constellation": "Ursa Major",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-6",
+      "kind": "star",
+      "name": "Alcor",
+      "position": {
+        "ra": 201.0747,
+        "dec": 54.9867,
+        "distanceKm": 772941679609852
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.99,
+        "spectralType": "A5V",
+        "constellation": "Ursa Major",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-7",
+      "kind": "star",
+      "name": "Albireo",
+      "position": {
+        "ra": 290.2203,
+        "dec": 27.9597,
+        "distanceKm": 4068114103209745
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.05,
+        "spectralType": "K3III",
+        "constellation": "Cygnus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-8",
+      "kind": "star",
+      "name": "Segin",
+      "position": {
+        "ra": 27.4244,
+        "dec": 63.6701,
+        "distanceKm": 4162721407935553
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.37,
+        "spectralType": "B3V",
+        "constellation": "Cassiopeia",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-9",
+      "kind": "star",
+      "name": "Errai",
+      "position": {
+        "ra": 350.914,
+        "dec": 77.6253,
+        "distanceKm": 425732871266136
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.21,
+        "spectralType": "K1IV",
+        "constellation": "Cepheus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-10",
+      "kind": "star",
+      "name": "Alfirk",
+      "position": {
+        "ra": 322.7533,
+        "dec": 70.5619,
+        "distanceKm": 2175968008693584
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.23,
+        "spectralType": "B2III",
+        "constellation": "Cepheus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-11",
+      "kind": "star",
+      "name": "Thuban",
+      "position": {
+        "ra": 212.2008,
+        "dec": 64.3756,
+        "distanceKm": 2923365716027468
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.67,
+        "spectralType": "A0III",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-12",
+      "kind": "star",
+      "name": "Alifa",
+      "position": {
+        "ra": 238.4231,
+        "dec": 75.3115,
+        "distanceKm": 3282873473985538
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.28,
+        "spectralType": "A7V",
+        "constellation": "Ursa Minor",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-13",
+      "kind": "star",
+      "name": "Yildun",
+      "position": {
+        "ra": 266.1219,
+        "dec": 86.0311,
+        "distanceKm": 1750235137427448
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.35,
+        "spectralType": "A1V",
+        "constellation": "Ursa Minor",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-14",
+      "kind": "star",
+      "name": "Grumium",
+      "position": {
+        "ra": 267.5348,
+        "dec": 56.8732,
+        "distanceKm": 1059601812929050
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.75,
+        "spectralType": "K2III",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-15",
+      "kind": "star",
+      "name": "Gianfar",
+      "position": {
+        "ra": 170.8315,
+        "dec": 69.8021,
+        "distanceKm": 3122041055951665
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.84,
+        "spectralType": "M0III",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-16",
+      "kind": "star",
+      "name": "Tyl",
+      "position": {
+        "ra": 292.0515,
+        "dec": 72.8422,
+        "distanceKm": 946073047258080
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.82,
+        "spectralType": "G9III",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-17",
+      "kind": "star",
+      "name": "Alsafi",
+      "position": {
+        "ra": 293.0911,
+        "dec": 64.512,
+        "distanceKm": 177861732884519
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.67,
+        "spectralType": "K0V",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-18",
+      "kind": "star",
+      "name": "Dziban",
+      "position": {
+        "ra": 173.8329,
+        "dec": 64.8619,
+        "distanceKm": 681172594025818
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.95,
+        "spectralType": "F5V",
+        "constellation": "Draco",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-19",
+      "kind": "star",
+      "name": "HR 8799",
+      "position": {
+        "ra": 346.9042,
+        "dec": 21.1347,
+        "distanceKm": 1220434230962923
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 5.96,
+        "spectralType": "A5V",
+        "constellation": "Pegasus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-20",
+      "kind": "star",
+      "name": "Lalande 21185",
+      "position": {
+        "ra": 165.8331,
+        "dec": 36.3031,
+        "distanceKm": 78618670227146
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.49,
+        "spectralType": "M2V",
+        "constellation": "Ursa Major",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-21",
+      "kind": "star",
+      "name": "Barnard's Star",
+      "position": {
+        "ra": 269.452,
+        "dec": 4.685,
+        "distanceKm": 56385953616582
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 9.51,
+        "spectralType": "M4V",
+        "constellation": "Ophiuchus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-22",
+      "kind": "star",
+      "name": "Groombridge 34",
+      "position": {
+        "ra": 3.0041,
+        "dec": 44.0221,
+        "distanceKm": 109744473481937
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 8.09,
+        "spectralType": "M1.5V",
+        "constellation": "Andromeda",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-23",
+      "kind": "star",
+      "name": "Lacaille 9352",
+      "position": {
+        "ra": 346.462,
+        "dec": -35.8531,
+        "distanceKm": 101608245275518
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.34,
+        "spectralType": "M0.5V",
+        "constellation": "Piscis Austrinus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-24",
+      "kind": "star",
+      "name": "Luyten 726-8",
+      "position": {
+        "ra": 26.2629,
+        "dec": -17.9521,
+        "distanceKm": 83159820853985
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 12.08,
+        "spectralType": "M5.5V",
+        "constellation": "Cetus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-25",
+      "kind": "star",
+      "name": "Kruger 60",
+      "position": {
+        "ra": 337.0315,
+        "dec": 57.6931,
+        "distanceKm": 123935569190808
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 9.59,
+        "spectralType": "M3V",
+        "constellation": "Cepheus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-26",
+      "kind": "star",
+      "name": "Ross 128",
+      "position": {
+        "ra": 176.9329,
+        "dec": 0.8031,
+        "distanceKm": 104068035198389
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 11.15,
+        "spectralType": "M4V",
+        "constellation": "Virgo",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-27",
+      "kind": "star",
+      "name": "Ross 248",
+      "position": {
+        "ra": 355.4619,
+        "dec": 44.1729,
+        "distanceKm": 97445523867582
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 12.29,
+        "spectralType": "M5.5V",
+        "constellation": "Andromeda",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-28",
+      "kind": "star",
+      "name": "61 Cygni A",
+      "position": {
+        "ra": 316.713,
+        "dec": 38.749,
+        "distanceKm": 107852327387421
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 5.21,
+        "spectralType": "K5V",
+        "constellation": "Cygnus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-29",
+      "kind": "star",
+      "name": "61 Cygni B",
+      "position": {
+        "ra": 316.7135,
+        "dec": 38.7485,
+        "distanceKm": 107852327387421
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 6.03,
+        "spectralType": "K7V",
+        "constellation": "Cygnus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-30",
+      "kind": "star",
+      "name": "Epsilon Eridani",
+      "position": {
+        "ra": 50.834,
+        "dec": -9.458,
+        "distanceKm": 99337669962098
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.73,
+        "spectralType": "K2V",
+        "constellation": "Eridanus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-31",
+      "kind": "star",
+      "name": "Tau Ceti",
+      "position": {
+        "ra": 26.017,
+        "dec": -15.938,
+        "distanceKm": 112582692623712
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 3.49,
+        "spectralType": "G8V",
+        "constellation": "Cetus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-32",
+      "kind": "star",
+      "name": "Kapteyn's Star",
+      "position": {
+        "ra": 77.912,
+        "dec": -45.018,
+        "distanceKm": 121097350049034
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 8.86,
+        "spectralType": "M1V",
+        "constellation": "Pictor",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-33",
+      "kind": "star",
+      "name": "HD 40307",
+      "position": {
+        "ra": 88.513,
+        "dec": -60.021,
+        "distanceKm": 395458533753877
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.17,
+        "spectralType": "K2.5V",
+        "constellation": "Pictor",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-34",
+      "kind": "star",
+      "name": "HD 85512",
+      "position": {
+        "ra": 147.632,
+        "dec": -43.503,
+        "distanceKm": 343424516154683
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.67,
+        "spectralType": "K5V",
+        "constellation": "Vela",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-35",
+      "kind": "star",
+      "name": "Gliese 581",
+      "position": {
+        "ra": 229.832,
+        "dec": -7.721,
+        "distanceKm": 192052828593390
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 10.55,
+        "spectralType": "M3V",
+        "constellation": "Libra",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-36",
+      "kind": "star",
+      "name": "Gliese 667C",
+      "position": {
+        "ra": 258.423,
+        "dec": -34.981,
+        "distanceKm": 223273239152907
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 10.22,
+        "spectralType": "M1.5V",
+        "constellation": "Scorpius",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-37",
+      "kind": "star",
+      "name": "Gliese 876",
+      "position": {
+        "ra": 343.3,
+        "dec": -11.86,
+        "distanceKm": 144749176230486
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 10.17,
+        "spectralType": "M4V",
+        "constellation": "Aquarius",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-38",
+      "kind": "star",
+      "name": "HD 10180",
+      "position": {
+        "ra": 24.631,
+        "dec": -60.512,
+        "distanceKm": 1201512770017762
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.33,
+        "spectralType": "G1V",
+        "constellation": "Hydrus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-39",
+      "kind": "star",
+      "name": "HD 10647",
+      "position": {
+        "ra": 25.562,
+        "dec": -53.763,
+        "distanceKm": 535477344748073
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 5.52,
+        "spectralType": "F9V",
+        "constellation": "Eridanus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-40",
+      "kind": "star",
+      "name": "HD 1461",
+      "position": {
+        "ra": 3.513,
+        "dec": -8.051,
+        "distanceKm": 719015515916141
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 6.47,
+        "spectralType": "G0V",
+        "constellation": "Cetus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-41",
+      "kind": "star",
+      "name": "HD 20794",
+      "position": {
+        "ra": 48.012,
+        "dec": -43.072,
+        "distanceKm": 187322463357100
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 4.26,
+        "spectralType": "G8V",
+        "constellation": "Eridanus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-42",
+      "kind": "star",
+      "name": "HD 221287",
+      "position": {
+        "ra": 352.562,
+        "dec": -8.201,
+        "distanceKm": 1627245641283898
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.82,
+        "spectralType": "F7V",
+        "constellation": "Aquarius",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-43",
+      "kind": "star",
+      "name": "HD 28185",
+      "position": {
+        "ra": 66.513,
+        "dec": -10.562,
+        "distanceKm": 1210973500490343
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 7.81,
+        "spectralType": "G5V",
+        "constellation": "Eridanus",
+        "searchable": false
+      }
+    },
+    {
+      "id": "star-faint-44",
+      "kind": "star",
+      "name": "HD 38283",
+      "position": {
+        "ra": 85.3,
+        "dec": -53.98,
+        "distanceKm": 1163669848127439
+      },
+      "metadata": {
+        "visible": true,
+        "source": "Hipparcos/IAU named bright-star static subset",
+        "dataMode": "demo-fixture",
+        "magnitudeV": 6.87,
+        "spectralType": "F9.5V",
+        "constellation": "Pictor",
+        "searchable": false
+      }
+    }
+  ],
+  "satellites": [
+    {
+      "id": "sat-25544",
+      "kind": "satellite",
+      "name": "ISS (ZARYA)",
+      "position": {
+        "ra": 212.5,
+        "dec": 42.3,
+        "altDeg": 62.1,
+        "azDeg": 308.4,
+        "distanceKm": 418
+      },
+      "metadata": {
+        "source": "demo fixture GYA-31",
+        "dataMode": "demo-fixture",
+        "catalogNumber": 25544,
+        "epoch": "2026-08-12",
+        "pathMode": "fixture-sampled",
+        "pathSource": "Project Zenith demo sampled ISS pass",
+        "pathSamples": [
+          {
+            "timeUtc": "2026-08-12T20:15:00.000Z",
+            "altDeg": 8.2,
+            "azDeg": 296,
+            "distanceKm": 1220
+          },
+          {
+            "timeUtc": "2026-08-12T20:18:00.000Z",
+            "altDeg": 28.4,
+            "azDeg": 302.6,
+            "distanceKm": 760
+          },
+          {
+            "timeUtc": "2026-08-12T20:21:00.000Z",
+            "altDeg": 62.1,
+            "azDeg": 308.4,
+            "distanceKm": 418
+          },
+          {
+            "timeUtc": "2026-08-12T20:24:00.000Z",
+            "altDeg": 34.8,
+            "azDeg": 322.9,
+            "distanceKm": 710
+          },
+          {
+            "timeUtc": "2026-08-12T20:27:00.000Z",
+            "altDeg": 10.6,
+            "azDeg": 133.2,
+            "distanceKm": 1180
+          }
+        ]
+      }
+    }
+  ],
+  "iss": {
+    "id": "iss",
+    "kind": "iss",
+    "name": "International Space Station",
+    "position": {
+      "ra": 212.5,
+      "dec": 42.3,
+      "altDeg": 62.1,
+      "azDeg": 308.4,
+      "distanceKm": 418
+    },
+    "metadata": {
+      "source": "demo fixture GYA-31",
+      "dataMode": "demo-fixture",
+      "altitudeIsAssumed": false,
+      "pathMode": "fixture-sampled",
+      "pathSource": "Project Zenith demo sampled ISS pass",
+      "pathSamples": [
+        {
+          "timeUtc": "2026-08-12T20:15:00.000Z",
+          "altDeg": 8.2,
+          "azDeg": 296,
+          "distanceKm": 1220
+        },
+        {
+          "timeUtc": "2026-08-12T20:18:00.000Z",
+          "altDeg": 28.4,
+          "azDeg": 302.6,
+          "distanceKm": 760
+        },
+        {
+          "timeUtc": "2026-08-12T20:21:00.000Z",
+          "altDeg": 62.1,
+          "azDeg": 308.4,
+          "distanceKm": 418
+        },
+        {
+          "timeUtc": "2026-08-12T20:24:00.000Z",
+          "altDeg": 34.8,
+          "azDeg": 322.9,
+          "distanceKm": 710
+        },
+        {
+          "timeUtc": "2026-08-12T20:27:00.000Z",
+          "altDeg": 10.6,
+          "azDeg": 133.2,
+          "distanceKm": 1180
+        }
+      ]
+    }
+  },
+  "moon": {
+    "id": "moon",
+    "kind": "moon",
+    "name": "Moon",
+    "position": {
+      "ra": 302.8,
+      "dec": -24.1,
+      "altDeg": 15.4,
+      "azDeg": 112.7,
+      "distanceKm": 368000
+    },
+    "metadata": {
+      "visible": true,
+      "source": "demo fixture GYA-31",
+      "dataMode": "demo-fixture",
+      "phase": "Waxing Gibbous",
+      "illuminationPct": 68
+    }
+  },
+  "constellations": [
+    {
+      "id": "orion",
+      "name": "Orion",
+      "points": [
+        {
+          "ra": 88.8,
+          "dec": 7.4
+        },
+        {
+          "ra": 81.3,
+          "dec": 6.35
+        },
+        {
+          "ra": 84.1,
+          "dec": -1.2
+        },
+        {
+          "ra": 83.2,
+          "dec": -2.6
+        }
+      ]
+    },
+    {
+      "id": "scorpius",
+      "name": "Scorpius",
+      "points": [
+        {
+          "ra": 247.4,
+          "dec": -26.4
+        },
+        {
+          "ra": 252.2,
+          "dec": -25.6
+        },
+        {
+          "ra": 255,
+          "dec": -29.2
+        }
+      ]
+    },
+    {
+      "id": "canis-major",
+      "name": "Canis Major",
+      "points": [
+        {
+          "ra": 101.3,
+          "dec": -16.7
+        },
+        {
+          "ra": 104,
+          "dec": -28.9
+        },
+        {
+          "ra": 106,
+          "dec": -26.4
+        }
+      ]
+    }
+  ],
+  "meteorShowers": [
+    {
+      "id": "perseids-2026",
+      "kind": "meteor_shower",
+      "name": "Perseids Meteor Shower",
+      "position": {
+        "ra": 46,
+        "dec": 57.5
+      },
+      "metadata": {
+        "source": "demo fixture GYA-31",
+        "dataMode": "demo-fixture",
+        "zhr": 100,
+        "active": true
+      }
+    }
+  ],
+  "provenance": [
+    {
+      "source": "demo fixture GYA-31/GYA-50",
+      "fetchedAt": "2026-08-12T20:30:00.000Z"
+    }
+  ]
+}

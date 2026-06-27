@@ -1,0 +1,146 @@
+/**
+ * GYA-37 — Panel Shell styles
+ *
+ * Uses existing CSS custom properties defined in globals.css:
+ *   --ink, --muted, --cyan, --violet, --panel, --line
+ *
+ * No external dependencies. Import this file in Panel.tsx.
+ */
+
+/* --------------------------------------------------------------------------
+   Panel root
+   -------------------------------------------------------------------------- */
+
+.zp-panel {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: var(--panel);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+/* --------------------------------------------------------------------------
+   Panel header
+   -------------------------------------------------------------------------- */
+
+.zp-panel-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 16px 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.zp-panel-header-titles {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.zp-panel-eyebrow {
+  display: block;
+  margin: 0 0 2px;
+  color: var(--cyan);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.zp-panel-heading {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.zp-panel-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Panel body
+   -------------------------------------------------------------------------- */
+
+.zp-panel-body {
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+/* --------------------------------------------------------------------------
+   Collapsible toggle button
+   -------------------------------------------------------------------------- */
+
+.zp-collapse-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--muted);
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s, transform 0.2s;
+}
+
+.zp-collapse-toggle:hover {
+  border-color: rgba(100, 233, 255, 0.4);
+  color: var(--cyan);
+}
+
+.zp-collapse-toggle:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 2px;
+}
+
+.zp-collapse-toggle-icon {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 0.2s;
+}
+
+/* When expanded, chevron points up */
+.zp-collapse-toggle[aria-expanded="true"] .zp-collapse-toggle-icon {
+  transform: rotate(225deg) translateY(-1px);
+}
+
+/* --------------------------------------------------------------------------
+   Collapsible body — closed state hides body without removing from DOM
+   -------------------------------------------------------------------------- */
+
+.zp-collapsible-body {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition: grid-template-rows 0.22s ease;
+  overflow: hidden;
+}
+
+.zp-collapsible-body[aria-hidden="true"] {
+  grid-template-rows: 0fr;
+}
+
+.zp-collapsible-inner {
+  overflow: hidden;
+}
+
+/* No bottom border when collapsed */
+.zp-panel[data-collapsed="true"] .zp-panel-header {
+  border-bottom-color: transparent;
+}

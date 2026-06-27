@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://project-zenith.dev/schemas/educational-reference-object.json",
+  "title": "EducationalReferenceObject",
+  "description": "A concise, demo-friendly educational record for a sky object.",
+  "type": "object",
+  "required": [
+    "objectId",
+    "name",
+    "kind",
+    "oneLine",
+    "whyItMatters",
+    "quickFacts",
+    "observationTips",
+    "kidFriendlySummary",
+    "sourceNotes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "objectId": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Lower-case, dash-separated unique identifier (e.g. 'saturn', 'iss')."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Display name (e.g. 'Saturn', 'ISS')."
+    },
+    "kind": {
+      "type": "string",
+      "enum": ["star", "planet", "moon", "satellite", "constellation", "cluster", "sun"],
+      "description": "Broad category of the sky object."
+    },
+    "oneLine": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 160,
+      "description": "One-sentence description suitable for a card header."
+    },
+    "whyItMatters": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Short paragraph explaining cultural, scientific, or navigational significance."
+    },
+    "quickFacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "value"],
+        "additionalProperties": false,
+        "properties": {
+          "label": { "type": "string", "minLength": 1 },
+          "value": { "type": "string", "minLength": 1 }
+        }
+      },
+      "minItems": 2,
+      "description": "2-6 bullet facts for the detail panel."
+    },
+    "observationTips": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "minItems": 1,
+      "description": "Practical tips for naked-eye or binocular observation."
+    },
+    "kidFriendlySummary": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Simple, jargon-free explanation for younger audiences."
+    },
+    "sourceNotes": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Attribution — which authoritative sources the facts are drawn from."
+    }
+  }
+}

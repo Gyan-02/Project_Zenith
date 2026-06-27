@@ -1,0 +1,73 @@
+[
+  {
+    "id": "perseids-2026",
+    "type": "meteor_shower",
+    "name": "Perseids Meteor Shower",
+    "startUtc": "2026-08-05T00:00:00.000Z",
+    "endUtc": "2026-08-16T00:00:00.000Z",
+    "peakUtc": "2026-08-12T00:00:00.000Z",
+    "summary": "One of the most prolific meteor showers of the year with up to 100 meteors per hour at peak. Radiant in Perseus — best viewed after midnight.",
+    "visibility": { "rating": "Excellent", "reason": "New moon on Aug 12 — dark skies guaranteed." },
+    "source": "demo fixture GYA-31",
+    "confidence": "high",
+    "navigationTarget": { "kind": "meteor_shower", "id": "perseids-2026", "label": "Perseids" }
+  },
+  {
+    "id": "saturn-opposition-2026",
+    "type": "visibility_window",
+    "name": "Saturn at Opposition",
+    "startUtc": "2026-08-01T00:00:00.000Z",
+    "endUtc": "2026-09-30T00:00:00.000Z",
+    "peakUtc": "2026-08-27T00:00:00.000Z",
+    "summary": "Saturn reaches opposition on Aug 27 — closest to Earth, fully illuminated by the Sun, visible all night. Rings are near maximum tilt for Northern Hemisphere observers.",
+    "visibility": { "rating": "Excellent", "reason": "Opposition month — Saturn rises at dusk and sets at dawn." },
+    "source": "demo fixture GYA-50",
+    "confidence": "high",
+    "navigationTarget": { "kind": "planet", "id": "saturn", "label": "Saturn" }
+  },
+  {
+    "id": "leonids-2026",
+    "type": "meteor_shower",
+    "name": "Leonids Meteor Shower",
+    "startUtc": "2026-11-06T00:00:00.000Z",
+    "endUtc": "2026-11-30T00:00:00.000Z",
+    "peakUtc": "2026-11-17T00:00:00.000Z",
+    "summary": "Fast-moving meteors from Comet Tempel-Tuttle. Up to 15 meteors per hour at peak. Known for occasional meteor storms in storm years.",
+    "visibility": { "rating": "Good", "reason": "Waxing crescent moon sets early — good second half of night." },
+    "source": "demo fixture GYA-31",
+    "confidence": "high"
+  },
+  {
+    "id": "geminids-2026",
+    "type": "meteor_shower",
+    "name": "Geminids Meteor Shower",
+    "startUtc": "2026-12-04T00:00:00.000Z",
+    "endUtc": "2026-12-20T00:00:00.000Z",
+    "peakUtc": "2026-12-14T00:00:00.000Z",
+    "summary": "The most reliable annual shower, up to 120 meteors per hour. Unusual source: asteroid 3200 Phaethon, not a comet.",
+    "visibility": { "rating": "Excellent", "reason": "Dark moon period enhances visibility." },
+    "source": "demo fixture GYA-31",
+    "confidence": "high"
+  },
+  {
+    "id": "solar-eclipse-aug-2026",
+    "type": "eclipse",
+    "name": "Total Solar Eclipse — Aug 2026",
+    "startUtc": "2026-08-12T16:30:00.000Z",
+    "endUtc": "2026-08-12T20:00:00.000Z",
+    "peakUtc": "2026-08-12T18:14:00.000Z",
+    "summary": "Total solar eclipse visible across northern Africa, southern Europe, and northern South America. Maximum totality lasts ~2 min 18 sec.",
+    "visibility": { "rating": "Poor", "reason": "Not visible from South Asia — path crosses North Atlantic and Europe." },
+    "source": "demo fixture GYA-31",
+    "confidence": "high",
+    "metadata": {
+      "path": {
+        "type": "eclipse",
+        "summary": "Totality crosses the Arctic, Greenland, Iceland, Spain, and parts of the western Mediterranean.",
+        "bestViewingRegions": ["Iceland", "Northern Spain", "Greenland"],
+        "duration": "Up to ~2m 18s near maximum",
+        "visibilityFromObserver": "Not visible from Patna; travel required for totality."
+      }
+    }
+  }
+]
